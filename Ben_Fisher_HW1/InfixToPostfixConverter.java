@@ -25,11 +25,11 @@ public class InfixToPostfixConverter {
                 }
                 chars.pop();
             }
-            else{
+            else {
                 if(chars.isEmpty()){
                     chars.push(c);
                 }
-                else if(precedence(c) > precedence(chars.peek())){
+                else if(chars.peek() == '(' || precedence(c) > precedence(chars.peek())){
                     chars.push(c);
                 }
                 else{
@@ -74,12 +74,12 @@ public class InfixToPostfixConverter {
             return 2;
         }
         else{
-            throw new InvalidCharacterException("Invalid Charcter");
+            throw new InvalidCharacterException("Invalid Character");
         }
     }
 
     public static void main(String[] args) {
-        String s = new String("(3+2)*7");
+        String s = new String("7-(2*3+5)*(8-4/2)");
         InfixToPostfixConverter i = new InfixToPostfixConverter();
         i.convertToPostfix(s);
         System.out.println(i.getPostfixString());
