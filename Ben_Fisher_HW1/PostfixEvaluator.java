@@ -52,4 +52,14 @@ public class PostfixEvaluator {
             return -10;
         }
     }
+/*  Math Test:
+    public static void main(String[] args) {
+        String s = new String("3-2+1");
+        InfixToPostfixConverter i = new InfixToPostfixConverter();
+        i.convertToPostfix(s);
+        System.out.println(i.getPostfixString());
+        PostfixEvaluator evaluator = new PostfixEvaluator();
+        int ans = evaluator.evaluate(i.getPostfixString());
+        System.out.println(ans);
+    }*/
 }

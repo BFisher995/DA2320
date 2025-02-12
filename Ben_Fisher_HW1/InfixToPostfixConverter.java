@@ -79,7 +79,7 @@ public class InfixToPostfixConverter {
     }
 
     /*  Converstion Test:
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         String s = new String("7-(2*3+5)*(8-4/2)");
         InfixToPostfixConverter i = new InfixToPostfixConverter();
         i.convertToPostfix(s);

@@ -4,7 +4,4 @@ public class InvalidCharacterException extends RuntimeException {
     public InvalidCharacterException(String mssg) {
         super(mssg);
     }
-    public static void main(String[] args) {
-        
-    }
 }        
