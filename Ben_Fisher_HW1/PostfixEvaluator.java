@@ -6,6 +6,8 @@ public class PostfixEvaluator {
     
     private String postfixString;
 
+    public PostfixEvaluator(){}
+
     public int evaluate(String postfixString){
         Stack<Integer> ints = new Stack<>();
         int ans = 0;

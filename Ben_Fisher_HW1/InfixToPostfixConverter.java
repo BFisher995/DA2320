@@ -6,6 +6,8 @@ public class InfixToPostfixConverter {
     
     private String postfixString, infixString;
 
+    public InfixToPostfixConverter(){}
+
     public void convertToPostfix(String infixString) throws InvalidCharacterException{
         Stack<Character> chars = new Stack<>();
         StringBuffer str = new StringBuffer();
