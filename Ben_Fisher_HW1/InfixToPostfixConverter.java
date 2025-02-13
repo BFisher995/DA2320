@@ -28,7 +28,7 @@ public class InfixToPostfixConverter {
                 chars.pop();
             }
             else {
-                if(chars.isEmpty()){
+                if(isOperator(c) && chars.isEmpty()){
                     chars.push(c);
                 }
                 else if(chars.peek() == '(' || precedence(c) > precedence(chars.peek())){
@@ -82,7 +82,7 @@ public class InfixToPostfixConverter {
 
     /*  Converstion Test:
     public static void main(String[] args) {
-        String s = new String("7-(2*3+5)*(8-4/2)");
+        String s = new String("732");
         InfixToPostfixConverter i = new InfixToPostfixConverter();
         i.convertToPostfix(s);
         System.out.println(i.getPostfixString());

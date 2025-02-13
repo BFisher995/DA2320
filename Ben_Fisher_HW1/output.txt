@@ -1,0 +1,5 @@
+(3+2)*(4+3*5)+2 converts to 32+435*+*2+ evaluates to 97
+((3*2+4/2)*(2+3*5+2)) converts to 32*42/+235*+2+* evaluates to 152
+3*4+5 converts to 34*5+ evaluates to 17
+3-2+1 converts to 32-1+ evaluates to 2
+7-(2*3+5) converts to 723*5+- evaluates to -4
