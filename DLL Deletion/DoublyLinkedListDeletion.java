@@ -1,4 +1,4 @@
-package Ben_Fisher_IC5;
+package DLL_Deletion;
 
 public class DoublyLinkedListDeletion {
 // Java program implementing a Doubly Linked List with all essential operations
