@@ -134,6 +134,7 @@ public class LinkedList {
         }
     }
 
+    // Use this for debugging only.
     public void printList(){
         ListNode current;
         int count=0;
